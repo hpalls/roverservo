@@ -99,7 +99,7 @@ namespace roverservo {
      * S1~S8.
      * 0°~180°.
     */
-    //% blockId=rovershield_servo block="Servo|%index|degree|%degree"
+    //% blockId=roverservo_servo block="Servo|%index|degree|%degree"
     //% weight=100
     //% degree.min=0 degree.max=180
     //% index.fieldEditor="gridpicker" index.fieldOptions.columns=4
