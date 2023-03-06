@@ -19,22 +19,22 @@ namespace roverservo {
      * The user can select the 8 steering gear controller.
      */
     export enum Servos {
-        SS1 = 0x08,
-        SS2 = 0x07,
-        SS3 = 0x06,
-        SS4 = 0x05,
-        SS5 = 0x04,
-        SS6 = 0x03,
-        SS7 = 0x02,
-        SS8 = 0x01,
-        SS9 = 0x09,
-        SS10 = 0x10,
-        SS11 = 0x11,
-        SS12 = 0x12,
-        SS13 = 0x13,
-        SS14 = 0x14,
-        SS15 = 0x15,
-        SS16 = 0x16
+        SS1 = 0x0F,
+        SS2 = 0x0E,
+        SS3 = 0x0D,
+        SS4 = 0x0C,
+        SS5 = 0x0B,
+        SS6 = 0x0A,
+        SS7 = 0x09,
+        SS8 = 0x08,
+        SS9 = 0x07,
+        SS10 = 0x06,
+        SS11 = 0x05,
+        SS12 = 0x04,
+        SS13 = 0x03,
+        SS14 = 0x02,
+        SS15 = 0x01,
+        SS16 = 0x00
     }
 
 
@@ -110,7 +110,7 @@ namespace roverservo {
         // 50hz
         let v_us = (degree * 1800 / 180 + 600) // 0.6ms ~ 2.4ms
         let value = v_us * 4096 / 20000
-        setPwm(index + 15, 0, value)
+        setPwm(index, 0, value)
     }
 
     
